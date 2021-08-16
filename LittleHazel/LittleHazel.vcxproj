@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\LittleHazel\Log.h" />
     <ClInclude Include="src\LittleHazel\Application.h" />
     <ClInclude Include="src\LittleHazel\Core.h" />
     <ClInclude Include="src\LittleHazel\EntryPoint.h" />
     <ClInclude Include="src\LittleHazel.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\LittleHazel\Log.cpp" />
     <ClCompile Include="src\LittleHazel\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
