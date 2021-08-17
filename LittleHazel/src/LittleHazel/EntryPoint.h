@@ -6,9 +6,12 @@ extern LH::Application* LH::CreatApplication();
 
 int main(int argc, char** argv)
 {
-	LH::Log::Init();
-
 	printf("LittleHazel's running\n");
+	
+	LH::Log::Init();
+	LH::Log::GetCoreLogger()->warn("Initialize Log");
+	LH::Log::GetClientLogger()->info("Initialize Log, too");
+
 	auto app = LH::CreatApplication();
 	app->Run();
 	delete app;
