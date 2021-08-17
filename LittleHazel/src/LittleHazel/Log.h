@@ -20,3 +20,5 @@ namespace LH {
 	};
 
 }
+
+#define LH_CORE_ERROR(...) ::LH::Log::GetCoreLogger()->error(__VA_ARGS__)
