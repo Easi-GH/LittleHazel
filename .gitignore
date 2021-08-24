@@ -1,6 +1,6 @@
 # Directories
-.vs/
-bin/
-bin_int/
+/.vs/
+/bin/
+/bin_int/
 # Files
 *.user
