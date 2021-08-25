@@ -32,5 +32,6 @@ namespace LH {
 		virtual int GetCatagoryFlags() const = 0;
 		virtual std::string ToString() const { return GetName(); }
 		
+
 	};
 }
