@@ -148,6 +148,7 @@
     <ClInclude Include="src\LittleHazel\Core.h" />
     <ClInclude Include="src\LittleHazel\EntryPoint.h" />
     <ClInclude Include="src\LittleHazel\Events\Event.h" />
+    <ClInclude Include="src\LittleHazel\Events\WindowEvent.h" />
     <ClInclude Include="src\LittleHazel\Log.h" />
   </ItemGroup>
   <ItemGroup>

@@ -41,8 +41,24 @@ namespace LH {
 		bool m_Handled = false;
 	};
 
-	class LH_API LEvent : public Event
+	class EventDispatcher
 	{
+		template<typename T>
+		using EventFn = std::function<bool(T&)>;
+	public:
+		EventDispatcher(Event& event)
+			: m_Event(event) {}
 
+		template<typename T>
+		bool Dispatch(EventFn<T> func)
+		{
+			if (m_Event.GetEventType() == T::GetStaticType())
+			{
+
+			}
+		}
+
+	private:
+		Event& m_Event;
 	};
 }
