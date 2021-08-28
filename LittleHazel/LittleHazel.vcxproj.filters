@@ -21,6 +21,7 @@
     </ClInclude>
     <ClInclude Include="src\LittleHazel\Events\Event.h" />
     <ClInclude Include="src\LittleHazel\Events\WindowEvent.h" />
+    <ClInclude Include="src\LittleHazel\Events\MouseEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\LittleHazel\Application.cpp">
