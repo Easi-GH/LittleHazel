@@ -19,6 +19,8 @@ namespace LH {
 			ss << "MouseMovedEvent" << m_MouseX << "," << m_MouseY;
 			return ss.str();
 		}
+
+		EVENT_CLASS_CATEGORY()
 	private:
 		float m_MouseX, m_MouseY;
 	};

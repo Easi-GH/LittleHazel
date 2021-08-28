@@ -5,6 +5,7 @@ namespace LH {
 
 	class LH_API KeyEvent : public Event
 	{
+	protected:
 
 	};
 }
