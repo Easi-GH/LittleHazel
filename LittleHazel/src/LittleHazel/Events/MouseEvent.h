@@ -20,7 +20,7 @@ namespace LH {
 			return ss.str();
 		}
 
-		EVENT_CLASS_CATEGORY()
+		EVENT_CLASS_CATEGORY(EventCategoryMouse)
 	private:
 		float m_MouseX, m_MouseY;
 	};
