@@ -2,6 +2,7 @@
 #include "Event.h"
 #include <sstream>
 
+
 namespace LH {
 
 	class LH_API MouseMovedEvent : public Event
@@ -16,12 +17,83 @@ namespace LH {
 		std::string ToString() const override
 		{
 			std::stringstream ss;
-			ss << "MouseMovedEvent" << m_MouseX << "," << m_MouseY;
+			ss << "MouseMovedEvent: " << m_MouseX << "," << m_MouseY;
 			return ss.str();
 		}
 
-		EVENT_CLASS_CATEGORY(EventCategoryMouse)
+		EVENT_CLASS_TYPE(MouseMoved)
+		EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput)
+
 	private:
 		float m_MouseX, m_MouseY;
+	};
+
+	class LH_API MouseScrolledEvent : public Event
+	{
+	public:
+		MouseScrolledEvent(float offsetX, float offsetY)
+			:m_OffsetX(offsetX), m_OffsetY(offsetY) {}
+
+		inline float GetOffsetX() const { return m_OffsetX; }
+		inline float GetOffsetY() const { return m_OffsetY; }
+
+		std::string ToString() const override
+		{
+			std::stringstream ss;
+			ss << "MouseScrolledEvent: " << m_OffsetX << ", " << m_OffsetY;
+			return ss.str();
+		}
+
+		EVENT_CLASS_TYPE(MouseScrolled)
+		EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput)
+
+	private:
+		float m_OffsetX, m_OffsetY;
+	};
+
+	class LH_API MouseButtonEvent : public Event
+	{
+	public:
+		inline int GetMouseButton() const { return m_Button; }
+
+		EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput)
+
+	protected:
+		MouseButtonEvent(int button)
+			:m_Button(button) {}
+
+		int m_Button;
+	};
+
+	class LH_API MouseButtonPressedEvent : public MouseButtonEvent
+	{
+	public:
+		MouseButtonPressedEvent(int button)
+			: MouseButtonEvent(button) {}
+
+		std::string ToString() const override
+		{
+			std::stringstream ss;
+			ss << "MouseButtonPressedEvent: " << m_Button;
+			return ss.str();
+		}
+
+		EVENT_CLASS_TYPE(MouseButtonPressed)
+	};
+
+	class LH_API MouseButtonReleasedEvent : public MouseButtonEvent
+	{
+	public:
+		MouseButtonReleasedEvent(int button)
+			: MouseButtonEvent(button) {}
+
+		std::string ToString() const override
+		{
+			std::stringstream ss;
+			ss << "MouseButtonReleasedEvent: " << m_Button;
+			return ss.str();
+		}
+
+		EVENT_CLASS_TYPE(MouseButtonReleased)
 	};
 }

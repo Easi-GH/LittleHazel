@@ -20,7 +20,7 @@
       <Filter>LittleHazel</Filter>
     </ClInclude>
     <ClInclude Include="src\LittleHazel\Events\Event.h" />
-    <ClInclude Include="src\LittleHazel\Events\WindowEvent.h" />
+    <ClInclude Include="src\LittleHazel\Events\ApplicationEvent.h" />
     <ClInclude Include="src\LittleHazel\Events\MouseEvent.h" />
     <ClInclude Include="src\LittleHazel\Events\KeyEvent.h" />
   </ItemGroup>
