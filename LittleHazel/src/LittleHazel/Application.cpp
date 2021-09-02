@@ -1,3 +1,4 @@
+#include "lhpch.h"
 #include "Application.h"
 
 namespace LH {

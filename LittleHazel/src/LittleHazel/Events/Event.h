@@ -1,6 +1,6 @@
 #pragma once
-#include "LittleHazel/Core.h"
 
+#include "LittleHazel/Core.h"
 
 namespace LH {
 

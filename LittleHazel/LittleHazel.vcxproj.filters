@@ -4,6 +4,9 @@
     <Filter Include="LittleHazel">
       <UniqueIdentifier>{879AF56B-F34F-6E61-7C44-6838E8F86465}</UniqueIdentifier>
     </Filter>
+    <Filter Include="LittleHazel\Events">
+      <UniqueIdentifier>{8B4891C2-772C-5218-E08C-4C6BCC8F3C9A}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\LittleHazel.h" />
@@ -16,13 +19,22 @@
     <ClInclude Include="src\LittleHazel\EntryPoint.h">
       <Filter>LittleHazel</Filter>
     </ClInclude>
+    <ClInclude Include="src\LittleHazel\Events\ApplicationEvent.h">
+      <Filter>LittleHazel\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LittleHazel\Events\Event.h">
+      <Filter>LittleHazel\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LittleHazel\Events\KeyEvent.h">
+      <Filter>LittleHazel\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LittleHazel\Events\MouseEvent.h">
+      <Filter>LittleHazel\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\LittleHazel\Log.h">
       <Filter>LittleHazel</Filter>
     </ClInclude>
-    <ClInclude Include="src\LittleHazel\Events\Event.h" />
-    <ClInclude Include="src\LittleHazel\Events\ApplicationEvent.h" />
-    <ClInclude Include="src\LittleHazel\Events\MouseEvent.h" />
-    <ClInclude Include="src\LittleHazel\Events\KeyEvent.h" />
+    <ClInclude Include="src\lhpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\LittleHazel\Application.cpp">
@@ -31,5 +43,6 @@
     <ClCompile Include="src\LittleHazel\Log.cpp">
       <Filter>LittleHazel</Filter>
     </ClCompile>
+    <ClCompile Include="src\lhpch.cpp" />
   </ItemGroup>
 </Project>

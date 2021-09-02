@@ -1,6 +1,6 @@
 #pragma once
+
 #include "Event.h"
-#include <sstream>
 
 namespace LH {
 	class LH_API WindowResizeEvent : public Event

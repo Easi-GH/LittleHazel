@@ -17,6 +17,9 @@ project "LittleHazel"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin_int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "lhpch.h"
+	pchsource "LittleHazel/src/lhpch.cpp"
+
 	files { 
 		"%{prj.name}/src/**.h",
 		"%{prj.name}/src/**.cpp"
