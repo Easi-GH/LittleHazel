@@ -1,3 +1,6 @@
 [submodule "LittleHazel/vendor/spdlog"]
 	path = LittleHazel/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "LittleHazel/vendor/GLFW"]
+	path = LittleHazel/vendor/GLFW
+	url = https://github.com/TheCherno/glfw
