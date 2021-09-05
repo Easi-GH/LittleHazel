@@ -12,6 +12,8 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include "LittleHazel/Log.h"
+
 #ifdef LH_PLATFORM_WINDOWS
 	#include <Windows.h>
 #endif

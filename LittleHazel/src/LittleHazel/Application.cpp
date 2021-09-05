@@ -5,6 +5,7 @@ namespace LH {
 	
 	LH::Application::Application()
 	{
+		m_Window = std::unique_ptr<Window>(Window::Create());
 	}
 
 	LH::Application::~Application()
@@ -13,7 +14,10 @@ namespace LH {
 
 	void LH::Application::Run()
 	{
-		while (true);
+		while (m_Running)
+		{
+			m_Window->OnUpdate();
+		}
 	}
 
 }
