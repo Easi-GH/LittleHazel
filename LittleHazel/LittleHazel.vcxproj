@@ -149,6 +149,8 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\LittleHazel\LayerStack.h" />
+    <ClInclude Include="src\LittleHazel\Layer.h" />
     <ClInclude Include="src\LittleHazel.h" />
     <ClInclude Include="src\LittleHazel\Application.h" />
     <ClInclude Include="src\LittleHazel\Core.h" />
@@ -163,6 +165,8 @@
     <ClInclude Include="src\lhpch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\LittleHazel\LayerStack.cpp" />
+    <ClCompile Include="src\LittleHazel\Layer.cpp" />
     <ClCompile Include="src\LittleHazel\Application.cpp" />
     <ClCompile Include="src\LittleHazel\Log.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />

@@ -47,6 +47,8 @@
       <Filter>Platform\Windows</Filter>
     </ClInclude>
     <ClInclude Include="src\lhpch.h" />
+    <ClInclude Include="src\LittleHazel\Layer.h" />
+    <ClInclude Include="src\LittleHazel\LayerStack.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\LittleHazel\Application.cpp">
@@ -59,5 +61,7 @@
       <Filter>Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\lhpch.cpp" />
+    <ClCompile Include="src\LittleHazel\Layer.cpp" />
+    <ClCompile Include="src\LittleHazel\LayerStack.cpp" />
   </ItemGroup>
 </Project>

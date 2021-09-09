@@ -58,14 +58,17 @@ project "LittleHazel"
 
 	filter "configurations:Debug"
 		defines "LH_DEBUG"
+		buidoptions "/MDd"
 		symbols "On"
 		
 	filter "configurations:Release"
 		defines "LH_RELEASE"
+		buidoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "LH_DIST"
+		buidoptions "/MD"
 		optimize "On"
 
 project "Sandbox"
@@ -101,12 +104,15 @@ project "Sandbox"
 
 	filter "configurations:Debug"
 		defines "LH_DEBUG"
+		buidoptions "/MDd"
 		symbols "On"
 		
 	filter "configurations:Release"
 		defines "LH_RELEASE"
+		buidoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "LH_DIST"
+		buidoptions "/MD"
 		optimize "On"
